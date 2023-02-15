@@ -1,3 +1,10 @@
+
+export let loader = async () => {
+  throw new Error("Sentry error test");
+
+  return null;
+}
+
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
