@@ -12,7 +12,7 @@ export const meta = () => ({
   title: "New Remix App",
   viewport: "width=device-width,initial-scale=1",
 });
-undefined()
+
 export default function App() {
   return (
     <html lang="en">
