@@ -3,13 +3,7 @@ import * as Sentry from "@sentry/remix"
 export let loader = async () => {
 
 
-  try {
-
-    throw new Error("SENTRY ERROR")
-  }
-  catch(err){
-    console.error(err)
-  }
+Sentry.captureException(new Error("test error again"))
 
   return null
 
