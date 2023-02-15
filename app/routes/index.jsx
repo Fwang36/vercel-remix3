@@ -2,7 +2,7 @@
 export let loader = async () => {
   throw new Error("Sentry error test");
 
-  return null;
+
 }
 
 export default function Index() {
