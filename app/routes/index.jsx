@@ -1,7 +1,18 @@
+import * as Sentry from "@sentry/remix"
 
 export let loader = async () => {
-  throw new Error("Sentry error test");
 
+  try {
+    throw new Error("Sentry error test");
+
+  }
+  catch(err) {
+    Sentry.captureException(err)
+  }
+  finally {
+    await Sentry.flush()
+  }
+  return null
 
 }
 
