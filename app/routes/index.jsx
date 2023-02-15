@@ -5,7 +5,7 @@ export let loader = async () => {
 
   try {
 
-    Sentry.captureException(new Error("SENTRY ERROR"))
+    throw new Error("SENTRY ERROR")
   }
   catch(err){
     console.error(err)
