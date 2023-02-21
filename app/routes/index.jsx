@@ -2,12 +2,10 @@ import * as Sentry from "@sentry/remix"
 
 export let loader = async () => {
 
-
-Sentry.captureException(new Error("test error again"))
-
   return null
-
+  
 }
+undefined()
 
 export default function Index() {
   return (
